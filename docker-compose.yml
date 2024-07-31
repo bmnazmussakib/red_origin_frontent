@@ -1,0 +1,30 @@
+version: 1.0.0
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "9000:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./:/usr/share/nginx/html
+    networks:
+      - app-network
+    restart: always
+    depends_on:
+      - frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - app-network
+
+    ports:
+      - "9090"
+
+networks:
+  app-network:
+    driver: bridge
+# volumes:
+#   nginxData

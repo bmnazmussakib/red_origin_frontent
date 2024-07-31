@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./mixins";
+@import "./color";
+@import "./common";
+
+
+.logo-text-color {
+    color: #EC1F27 !important;
+}
+
+.logo-bg-color {
+    background-color: #000;
+}

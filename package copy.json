@@ -1,0 +1,50 @@
+{
+  "name": "sailor_next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node ./server.js  -p 8000",
+    "build": "next build",
+    "start": "next start  -p 8000",
+    "build-staging": "NODE_ENV=staging next build",
+    "deploy-staging": "NODE_ENV=staging node ./server.js",
+    "build-production": "NODE_ENV=production next build",
+    "deploy-production": "NODE_ENV=production node ./server.js"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "axios": "^1.2.0",
+    "bcrypt": "^5.1.0",
+    "cookies-next": "^2.1.1",
+    "country-codes-list": "^1.6.10",
+    "formik": "^2.2.9",
+    "fs": "^0.0.1-security",
+    "i18next": "^22.4.9",
+    "next": "13.0.5",
+    "next-i18next": "^13.0.2",
+    "next-redux-wrapper": "^8.0.0",
+    "rc-slider": "^10.1.0",
+    "rc-tooltip": "^5.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-html-parser": "^2.0.2",
+    "react-i18next": "^12.1.4",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-skeleton": "^3.1.0",
+    "react-paginate": "^8.1.4",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "react-slider": "^2.0.4",
+    "react-toastify": "^9.1.1",
+    "reactjs-social-login": "^2.6.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.4.5",
+    "yup": "^0.32.11"
+  },
+  "engines": {
+    "node": ">=16.0.0 <17.0.0"
+  }
+}
