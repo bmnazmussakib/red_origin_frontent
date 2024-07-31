@@ -6,7 +6,7 @@
         "build": "next build",
         "start": "next start  -p 8011",
         "export": "next export",
-        "dev": "next dev -p 8081",
+        "dev": "next dev -p 8082",
         "dev-nagad": "next dev -p 10060"
     },
     "dependencies": {
